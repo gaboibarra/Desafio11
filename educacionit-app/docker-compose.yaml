@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: educacionit-app
+    environment:
+      - MONGO_DB_URI=mongodb://mongo:27017
+      - MONGO_DB_NAME=educacionit
+      - MONGO_DB_USER=root
+      - MONGO_DB_PASS=rootpassword
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    environment:
+      - MONGO_INITDB_DATABASE=educacionit
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=rootpassword
+
+volumes:
+  mongo-data:

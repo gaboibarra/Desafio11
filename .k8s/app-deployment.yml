@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: educacionit-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: educacionit-app
+  template:
+    metadata:
+      labels:
+        app: educacionit-app
+    spec:
+      containers:
+        - name: educacionit-app
+          image: educacionit-app:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: MONGO_DB_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: MONGO_DB_URI
+            - name: MONGO_DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: app-config
+                  key: MONGO_DB_NAME
+            - name: MONGO_DB_USER
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: mongo-root-username
+            - name: MONGO_DB_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: mongo-secret
+                  key: mongo-root-password
