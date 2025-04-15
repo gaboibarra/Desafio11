@@ -8,14 +8,14 @@ Este desafío consistió en transformar un entorno Docker Compose a Kubernetes, 
 
 ```bash
 Desafio11/
-├── .k8s/ # Archivos YAML para Kubernetes
-│ ├── mongo-secret.yaml
-│ ├── mongo-pvc.yaml
-│ ├── mongo-deployment.yaml
-│ ├── mongo-service.yaml
-│ ├── app-config.yaml
-│ ├── app-deployment.yaml
-│ ├── app-service.yaml
+├── .k8s/ # Archivos YML para Kubernetes
+│ ├── mongo-secret.yml
+│ ├── mongo-pvc.yml
+│ ├── mongo-deployment.yml
+│ ├── mongo-service.yml
+│ ├── app-config.yml
+│ ├── app-deployment.yml
+│ ├── app-service.yml
 ├── educacionit-app/ # Código fuente de la app
 │ ├── Dockerfile
 │ ├── package.json
