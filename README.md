@@ -65,10 +65,14 @@ kubectl apply -f .k8s/mongo-service.yml
 ```
 ![image](https://github.com/user-attachments/assets/e1cd67ec-9147-472a-af22-163fc429c5e6)
 
+#### Pod de MongoDB Running
 
+![image](https://github.com/user-attachments/assets/9f403adc-02ab-4fbb-8809-3626e36045cc)
 
+### ✅ 2. Despliegue de la Aplicacion
+#### Ubicarse en la carpeta con el Dockerfile: (En este caso Desafio11 previamente hice una copia de Desafio10 para trabajar mejor)
 
-
+![image](https://github.com/user-attachments/assets/b430ae6b-0974-499f-b8ce-aad30ec6758f)
 
 ```bash
 docker build -t educacionit-app:latest ./educacionit-app
