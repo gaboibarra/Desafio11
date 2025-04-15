@@ -37,10 +37,10 @@ Desafio11/
 ## 🔄 Pasos para el despliegue
 
 ### ✅ 1. Iniciar Minikube
-```bash
+
 minikube start --driver=hyperv --memory=2048 --hyperv-virtual-switch="Default Switch"
 ![image](https://github.com/user-attachments/assets/3f6acbd4-beef-4475-bb4e-1989127e4e1a)
-```
+
 
 ```bash
 minikube start --driver=hyperv --memory=2048 --hyperv-virtual-switch="Default Switch"
