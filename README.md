@@ -86,7 +86,7 @@ kubectl apply -f .k8s/mongo-service.yml
 
 ![image](https://github.com/user-attachments/assets/ecc7543e-ffcf-4285-b158-83364e7f2378)
 
-#### Reiniciar un despliegue en Kubernetes sirve para forzar que los pods del Deployment se reinicien para usar esa nueva imagen
+#### [!IMPORTANT] Reiniciar un despliegue en Kubernetes sirve para forzar que los pods del Deployment se reinicien para usar esa nueva imagen
 
 ```bash
 docker build -t educacionit-app:latest ./educacionit-app
