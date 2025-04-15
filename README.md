@@ -31,7 +31,7 @@ Desafio11/
 - 🐘 MongoDB
 - 🧠 NestJS (Node.js)
 - 🖥️ Hyper-V (como driver)
-- ![image](https://github.com/user-attachments/assets/d4ce5714-6f01-46f1-80bc-208ef10bb5de) Powershell
+- 📰 Powershell
 
 ---
 
