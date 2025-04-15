@@ -74,6 +74,20 @@ kubectl apply -f .k8s/mongo-service.yml
 
 ![image](https://github.com/user-attachments/assets/b430ae6b-0974-499f-b8ce-aad30ec6758f)
 
+#### Construir la imagen (Antes de esto se debe configurar Docker para usar el demonio de Minikube de esta manera le digo a Docker que use el entorno interno de Minikube)
+
+![image](https://github.com/user-attachments/assets/a4307653-e5ff-43ee-9d90-522d3b1aedf4)
+
+#### Ahora si se puede construir la imagen
+
+![image](https://github.com/user-attachments/assets/c480df1e-f1f3-432f-8fae-90bcb02b59f8)
+
+#### Cargar la imagen a Minikube
+
+![image](https://github.com/user-attachments/assets/ecc7543e-ffcf-4285-b158-83364e7f2378)
+
+#### Reiniciar un despliegue en Kubernetes sirve para forzar que los pods del Deployment se reinicien para usar esa nueva imagen
+
 ```bash
 docker build -t educacionit-app:latest ./educacionit-app
 ```
