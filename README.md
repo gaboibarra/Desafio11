@@ -42,15 +42,23 @@ minikube start --driver=hyperv --memory=2048 --hyperv-virtual-switch="Default Sw
 ![image](https://github.com/user-attachments/assets/3f6acbd4-beef-4475-bb4e-1989127e4e1a)
 
 
+### ✅ 2. Despliegue de MongoDB
+
 ```bash
-minikube start --driver=hyperv --memory=2048 --hyperv-virtual-switch="Default Switch"
-
 kubectl apply -f .k8s/mongo-secret.yaml
+```
+```bash
 kubectl apply -f .k8s/mongo-pvc.yaml
+```
+```bash
 kubectl apply -f .k8s/mongo-deployment.yaml
+```
+```bash
 kubectl apply -f .k8s/mongo-service.yaml
-
+```
+```bash
 docker build -t educacionit-app:latest ./educacionit-app
+```
 
 
 kubectl apply -f .k8s/app-config.yaml
