@@ -6,6 +6,7 @@ Este desafío consistió en transformar un entorno Docker Compose a Kubernetes, 
 
 ## 📁 Estructura del proyecto
 
+```bash
 Desafio11/
 ├── .k8s/ # Archivos YAML para Kubernetes
 │ ├── mongo-secret.yaml
@@ -19,7 +20,7 @@ Desafio11/
 │ ├── Dockerfile
 │ ├── package.json
 │ └── src/
-
+```
 ---
 
 ## ⚙️ Tecnologías utilizadas
