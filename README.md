@@ -88,20 +88,31 @@ kubectl apply -f .k8s/mongo-service.yml
 
 #### ❗Reiniciar un despliegue en Kubernetes sirve para forzar que los pods del Deployment se reinicien para usar esa nueva imagen
 
+### Aplicar los manifiestos de la App
 ```bash
-docker build -t educacionit-app:latest ./educacionit-app
-```
-
-
 kubectl apply -f .k8s/app-config.yml
+```
+![image](https://github.com/user-attachments/assets/e66b4928-1f5f-4c82-92cf-bef9daeb1487)
+
+```bash
 kubectl apply -f .k8s/app-deployment.yml
+```
+![image](https://github.com/user-attachments/assets/c1bf3071-5413-4e1a-9fbb-b8e105ad40b4)
+
+```bash
 kubectl apply -f .k8s/app-service.yml
+```
+![image](https://github.com/user-attachments/assets/eae41630-a61b-4d40-8a5b-63829f0fe149)
 
+#### Pod de la App Running
 
-kubectl rollout restart deployment educacionit-app
+![image](https://github.com/user-attachments/assets/939a26c8-bb8b-41b7-94c2-714982896617)
 
-kubectl get pods
+### ✅ 3.Acceder a la app
 
-kubectl get svc
+![image](https://github.com/user-attachments/assets/fe4cb019-c93f-4f36-b577-405583d7df9b)
 
-minikube service educacionit-app
+#### App en funcionamiento
+
+![image](https://github.com/user-attachments/assets/e8c11ef5-a637-42bc-9961-53cde32cf4b5)
+
